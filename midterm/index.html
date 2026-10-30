@@ -33,9 +33,20 @@
   <main class="container py-4 flex-grow-1">
     <h1 class="h3 mb-4">New Arrivals</h1>
 
+    <input type="radio" name="category" id="cat-all" class="filter-input" checked>
+    <label for="cat-all" class="filter-label">All</label>
+    <input type="radio" name="category" id="cat-tops" class="filter-input">
+    <label for="cat-tops" class="filter-label">Tops</label>
+    <input type="radio" name="category" id="cat-bottoms" class="filter-input">
+    <label for="cat-bottoms" class="filter-label">Bottoms</label>
+    <input type="radio" name="category" id="cat-outerwear" class="filter-input">
+    <label for="cat-outerwear" class="filter-label">Outerwear</label>
+    <input type="radio" name="category" id="cat-footwear" class="filter-input">
+    <label for="cat-footwear" class="filter-label">Footwear</label>
+
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
 
-      <div class="col">
+      <div class="col" data-category="tops">
         <div class="card h-100">
           <a href="product.html"><img src="https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Graphic Print T-Shirt"></a>
           <div class="card-body d-flex flex-column">
@@ -46,7 +57,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="tops">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1623658580851-3b25bf83b4ea?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Cotton Polo Shirt">
           <div class="card-body d-flex flex-column">
@@ -57,7 +68,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="bottoms">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Slim Fit Denim Jeans">
           <div class="card-body d-flex flex-column">
@@ -68,7 +79,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="outerwear">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Pullover Hoodie">
           <div class="card-body d-flex flex-column">
@@ -79,7 +90,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="outerwear">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Denim Jacket">
           <div class="card-body d-flex flex-column">
@@ -90,7 +101,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="footwear">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Canvas Sneakers">
           <div class="card-body d-flex flex-column">
@@ -101,7 +112,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="tops">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Casual Everyday Wear">
           <div class="card-body d-flex flex-column">
@@ -112,7 +123,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="tops">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Women's Casual Top">
           <div class="card-body d-flex flex-column">
@@ -123,7 +134,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="tops">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Classic Crew Tee">
           <div class="card-body d-flex flex-column">
@@ -134,7 +145,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="bottoms">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1693443688057-85f57b872a3c?w=800&q=80&auto=format&fit=crop" class="card-img-top" alt="Casual Style Set">
           <div class="card-body d-flex flex-column">

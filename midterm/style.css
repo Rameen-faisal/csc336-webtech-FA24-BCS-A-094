@@ -78,3 +78,29 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+.filter-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.filter-label {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin: 0 0.4rem 0.4rem 0;
+  border: 1px solid hsl(298, 70%, 45%);
+  color: hsl(298, 70%, 45%);
+  cursor: pointer;
+}
+
+.filter-input:checked + .filter-label {
+  background: hsl(298, 70%, 45%);
+  color: #fff;
+}
+
+#cat-tops:checked ~ .row .col:not([data-category="tops"]),
+#cat-bottoms:checked ~ .row .col:not([data-category="bottoms"]),
+#cat-outerwear:checked ~ .row .col:not([data-category="outerwear"]),
+#cat-footwear:checked ~ .row .col:not([data-category="footwear"]) {
+  display: none;
+}
