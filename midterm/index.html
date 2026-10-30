@@ -44,6 +44,11 @@
     <input type="radio" name="category" id="cat-footwear" class="filter-input">
     <label for="cat-footwear" class="filter-label">Footwear</label>
 
+    <div class="d-flex gap-2 my-3">
+      <input type="search" id="search" class="form-control" placeholder="Search products">
+      <button type="button" id="sort-btn" class="btn btn-dark text-nowrap">Sort by price</button>
+    </div>
+
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
 
       <div class="col" data-category="tops">
@@ -157,6 +162,8 @@
       </div>
 
     </div>
+
+    <p id="no-results" class="text-center fw-bold py-5" hidden>No products found</p>
   </main>
 
   <footer class="bg-dark text-light mt-auto">
@@ -195,5 +202,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
