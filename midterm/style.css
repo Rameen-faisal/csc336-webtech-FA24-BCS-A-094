@@ -78,7 +78,6 @@ footer a:hover {
     font-size: 1rem;
   }
 }
-
 .filter-input {
   position: absolute;
   opacity: 0;
@@ -103,4 +102,40 @@ footer a:hover {
 #cat-outerwear:checked ~ .row .col:not([data-category="outerwear"]),
 #cat-footwear:checked ~ .row .col:not([data-category="footwear"]) {
   display: none;
+}
+
+.product-layout {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "image"
+    "details"
+    "description";
+}
+
+.product-image {
+  grid-area: image;
+}
+
+.product-details {
+  grid-area: details;
+}
+
+.product-description {
+  grid-area: description;
+}
+
+@media (min-width: 694px) {
+  .product-layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image details"
+      "description description";
+  }
+
+  .product-details {
+    position: sticky;
+    top: 84px;
+    align-self: start;
+  }
 }
