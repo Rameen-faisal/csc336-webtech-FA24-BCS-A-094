@@ -1,0 +1,80 @@
+a {
+  text-decoration: none;
+}
+
+.brand-logo {
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+}
+
+.cart-link {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.nav-links {
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card-img-top {
+  border-radius: 0;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.price {
+  font-weight: 700;
+  color: #b3202a;
+}
+
+.detail-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #b3202a;
+}
+
+footer a {
+  color: #bbb;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .brand-logo {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .card-body {
+    padding: 0.6rem;
+  }
+
+  .card-body .btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .quantity-box {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-body .btn {
+    font-size: 1rem;
+  }
+}
